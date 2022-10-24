@@ -23,7 +23,7 @@ def main():
             break
 
     if tries == 3:
-        print('Congratulations, {name}')
+        print(f'Congratulations, {name}')
 
 
 if __name__ == '__main__':
