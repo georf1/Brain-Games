@@ -10,7 +10,7 @@ def start_round():
     operator = choice(['-', '+', '*'])
 
     condition = f"{first_num} {operator} {second_num}"
-    
+
     if operator == '-':
         right_answer = first_num - second_num
     elif operator == '+':
