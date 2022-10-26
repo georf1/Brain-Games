@@ -6,7 +6,7 @@ def start_game(game):
 
     tries = 0
     condition, right_answer = game.start_round()
-    print(game.description)
+    print(game.DESCRIPTION)
 
     while tries < 3:
         print(f'Question: {condition}')
