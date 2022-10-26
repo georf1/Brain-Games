@@ -19,7 +19,7 @@ def start_game(game):
             condition, right_answer = game.start_round()
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'")
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             break
 
     if tries == 3:
