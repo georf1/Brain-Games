@@ -11,7 +11,7 @@ def start_round():
     while divider * divider <= condition and condition % divider != 0:
         divider += 1
 
-    if condition > 2 and divider * divider > condition:
+    if condition < 2 and divider * divider > condition:
         right_answer = 'yes'
     else:
         right_answer = 'no'
