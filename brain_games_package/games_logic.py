@@ -24,4 +24,3 @@ def start_game(game):
 
     if tries == 3:
         print(f'Congratulations, {name}')
-
