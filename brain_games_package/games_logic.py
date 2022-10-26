@@ -23,4 +23,4 @@ def start_game(game):
             break
 
     if tries == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
