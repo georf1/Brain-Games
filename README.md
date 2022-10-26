@@ -10,8 +10,10 @@ The package with 5 short brain games
 ### Installing
 To install use:
 > make install
+
 To build use:
 > make build
+
 To package install use:
 > make package-install
 
