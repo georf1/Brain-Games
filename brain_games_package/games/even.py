@@ -9,7 +9,7 @@ def isEven(num):
 
 
 def start_round():
-    condition = randint(1, 100)
-    right_answer = isEven(condition) and 'yes' or 'no'
+    num = randint(1, 100)
+    right_answer = isEven(num) and 'yes' or 'no'
 
-    return condition, right_answer
+    return num, right_answer
