@@ -4,12 +4,12 @@ from random import randint, choice
 DESCRIPTION = "What is the result of the expression?"
 
 
-def start_round():
+def generate_round():
     first_num = randint(1, 100)
     second_num = randint(1, 100)
     operator = choice(['-', '+', '*'])
 
-    condition = f"{first_num} {operator} {second_num}"
+    expression = f"{first_num} {operator} {second_num}"
 
     if operator == '-':
         right_answer = first_num - second_num
@@ -18,4 +18,4 @@ def start_round():
     else:
         right_answer = first_num * second_num
 
-    return condition, str(right_answer)
+    return expression, str(right_answer)

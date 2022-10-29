@@ -4,16 +4,20 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def start_round():
-    condition = randint(1, 100)
-
+def isPrime(num):
     divider = 2
-    while divider * divider <= condition and condition % divider != 0:
+
+    while divider * divider <= num and num % divider != 0:
         divider += 1
 
-    if condition >= 2 and divider * divider > condition:
-        right_answer = 'yes'
+    if num >= 2 and divider * divider > num:
+        return 'yes'
     else:
-        right_answer = 'no'
+        return 'no'
 
-    return condition, right_answer
+
+def generate_round():
+    num = randint(1, 100)
+    right_answer = isPrime(num)
+
+    return num, right_answer

@@ -4,7 +4,7 @@ from random import randint
 DESCRIPTION = "What number is missing in the progression?"
 
 
-def start_round():
+def generate_round():
     sequence = ''
 
     begin = randint(1, 25)

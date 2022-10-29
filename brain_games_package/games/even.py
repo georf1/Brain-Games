@@ -8,7 +8,7 @@ def isEven(num):
     return num % 2 == 0
 
 
-def start_round():
+def generate_round():
     num = randint(1, 100)
     right_answer = isEven(num) and 'yes' or 'no'
 
