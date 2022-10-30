@@ -18,6 +18,6 @@ def is_prime(num):
 
 def generate_round():
     num = randint(1, 100)
-    right_answer = 'yes' if isPrime(num) else 'no'
+    right_answer = 'yes' if is_prime(num) else 'no'
 
     return num, right_answer
