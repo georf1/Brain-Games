@@ -12,14 +12,14 @@ def generate_round():
     step = randint(1, 10)
 
     length = randint(5, 10)
-    lst = list(range(begin, end, step))[:length]
+    progression = list(range(begin, end, step))[:length]
 
-    random_index = randint(0, len(lst) - 1)
-    right_answer = lst[random_index]
+    random_index = randint(0, len(progression) - 1)
+    right_answer = progression[random_index]
 
-    lst[random_index] = '..'
+    progression[random_index] = '..'
 
-    for element in lst:
+    for element in progression:
         sequence += str(element) + ' '
 
     return sequence.strip(), str(right_answer)
