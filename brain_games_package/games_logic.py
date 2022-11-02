@@ -20,7 +20,6 @@ def start_game(game):
             print(f"'{answer}' is wrong answer ;(. "
                   f"Correct answer was '{right_answer}'")
             print(f"Let's try again, {name}!")
-            break
+            return
 
-    if successful_tries == 3:
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
